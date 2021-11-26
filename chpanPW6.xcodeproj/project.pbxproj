@@ -19,6 +19,7 @@
 		6D4BD89C2750F6AA004F454A /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4BD89B2750F6AA004F454A /* ARKit.framework */; };
 		6D4BD8CE275124C0004F454A /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4BD8CB275124B1004F454A /* MyLogger1.framework */; };
 		6D4BD8CF275124C0004F454A /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4BD8CB275124B1004F454A /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6D4BD8D327512673004F454A /* SystemPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 6D4BD8D227512673004F454A /* SystemPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D4BD8CE275124C0004F454A /* MyLogger1.framework in Frameworks */,
+				6D4BD8D327512673004F454A /* SystemPackage in Frameworks */,
 				6D4BD89C2750F6AA004F454A /* ARKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +200,9 @@
 			dependencies = (
 			);
 			name = chpanPW6;
+			packageProductDependencies = (
+				6D4BD8D227512673004F454A /* SystemPackage */,
+			);
 			productName = chpanPW6;
 			productReference = 6D4BD86727505287004F454A /* chpanPW6.app */;
 			productType = "com.apple.product-type.application";
@@ -270,6 +275,9 @@
 				Base,
 			);
 			mainGroup = 6D4BD85E27505287004F454A;
+			packageReferences = (
+				6D4BD8D127512673004F454A /* XCRemoteSwiftPackageReference "swift-system" */,
+			);
 			productRefGroup = 6D4BD86827505287004F454A /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -702,6 +710,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D4BD8D127512673004F454A /* XCRemoteSwiftPackageReference "swift-system" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-system.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D4BD8D227512673004F454A /* SystemPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D4BD8D127512673004F454A /* XCRemoteSwiftPackageReference "swift-system" */;
+			productName = SystemPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6D4BD85F27505287004F454A /* Project object */;
 }
