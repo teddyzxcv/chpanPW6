@@ -16,6 +16,7 @@
 		6D4BD88227505288004F454A /* chpanPW6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4BD88127505288004F454A /* chpanPW6Tests.swift */; };
 		6D4BD88C27505288004F454A /* chpanPW6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4BD88B27505288004F454A /* chpanPW6UITests.swift */; };
 		6D4BD88E27505288004F454A /* chpanPW6UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4BD88D27505288004F454A /* chpanPW6UITestsLaunchTests.swift */; };
+		6D4BD89C2750F6AA004F454A /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4BD89B2750F6AA004F454A /* ARKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		6D4BD88727505288004F454A /* chpanPW6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chpanPW6UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D4BD88B27505288004F454A /* chpanPW6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chpanPW6UITests.swift; sourceTree = "<group>"; };
 		6D4BD88D27505288004F454A /* chpanPW6UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chpanPW6UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6D4BD89B2750F6AA004F454A /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4BD89C2750F6AA004F454A /* ARKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				6D4BD88027505288004F454A /* chpanPW6Tests */,
 				6D4BD88A27505288004F454A /* chpanPW6UITests */,
 				6D4BD86827505287004F454A /* Products */,
+				6D4BD89A2750F6AA004F454A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +129,14 @@
 				6D4BD88D27505288004F454A /* chpanPW6UITestsLaunchTests.swift */,
 			);
 			path = chpanPW6UITests;
+			sourceTree = "<group>";
+		};
+		6D4BD89A2750F6AA004F454A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D4BD89B2750F6AA004F454A /* ARKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
