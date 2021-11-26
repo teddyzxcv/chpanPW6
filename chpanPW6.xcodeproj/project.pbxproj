@@ -20,6 +20,8 @@
 		6D4BD8CE275124C0004F454A /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4BD8CB275124B1004F454A /* MyLogger1.framework */; };
 		6D4BD8CF275124C0004F454A /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4BD8CB275124B1004F454A /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6D4BD8D327512673004F454A /* SystemPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 6D4BD8D227512673004F454A /* SystemPackage */; };
+		6D4BD907275138C2004F454A /* MyLogger2 in Frameworks */ = {isa = PBXBuildFile; productRef = 6D4BD906275138C2004F454A /* MyLogger2 */; };
+		7596A972CFFE78DA8EB2E0B7 /* Pods_chpanPW6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1C0F2D98C6E591E26D4684 /* Pods_chpanPW6.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0AC01D4ACF87B71221B62F07 /* Pods-chpanPW6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chpanPW6.release.xcconfig"; path = "Target Support Files/Pods-chpanPW6/Pods-chpanPW6.release.xcconfig"; sourceTree = "<group>"; };
+		1B1C0F2D98C6E591E26D4684 /* Pods_chpanPW6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chpanPW6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		361591EE295098E693E3AE8E /* Pods-chpanPW6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chpanPW6.debug.xcconfig"; path = "Target Support Files/Pods-chpanPW6/Pods-chpanPW6.debug.xcconfig"; sourceTree = "<group>"; };
 		6D4BD86727505287004F454A /* chpanPW6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chpanPW6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D4BD86A27505287004F454A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D4BD86C27505287004F454A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +88,7 @@
 		6D4BD88D27505288004F454A /* chpanPW6UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chpanPW6UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6D4BD89B2750F6AA004F454A /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		6D4BD8C5275124B1004F454A /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
+		6D4BD903275138B8004F454A /* MyLogger2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLogger2; path = ../MyLogger2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +97,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D4BD8CE275124C0004F454A /* MyLogger1.framework in Frameworks */,
+				6D4BD907275138C2004F454A /* MyLogger2 in Frameworks */,
 				6D4BD8D327512673004F454A /* SystemPackage in Frameworks */,
 				6D4BD89C2750F6AA004F454A /* ARKit.framework in Frameworks */,
+				7596A972CFFE78DA8EB2E0B7 /* Pods_chpanPW6.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,15 +121,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6881EFEFC534978EE0DD902D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				361591EE295098E693E3AE8E /* Pods-chpanPW6.debug.xcconfig */,
+				0AC01D4ACF87B71221B62F07 /* Pods-chpanPW6.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6D4BD85E27505287004F454A = {
 			isa = PBXGroup;
 			children = (
+				6D4BD902275138B8004F454A /* Packages */,
 				6D4BD8C5275124B1004F454A /* MyLogger1.xcodeproj */,
 				6D4BD86927505287004F454A /* chpanPW6 */,
 				6D4BD88027505288004F454A /* chpanPW6Tests */,
 				6D4BD88A27505288004F454A /* chpanPW6UITests */,
 				6D4BD86827505287004F454A /* Products */,
 				6D4BD89A2750F6AA004F454A /* Frameworks */,
+				6881EFEFC534978EE0DD902D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				6D4BD89B2750F6AA004F454A /* ARKit.framework */,
+				1B1C0F2D98C6E591E26D4684 /* Pods_chpanPW6.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -183,6 +204,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6D4BD902275138B8004F454A /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				6D4BD903275138B8004F454A /* MyLogger2 */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,10 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D4BD89127505288004F454A /* Build configuration list for PBXNativeTarget "chpanPW6" */;
 			buildPhases = (
+				646C037BD8A61CA0B86CAA31 /* [CP] Check Pods Manifest.lock */,
 				6D4BD86327505287004F454A /* Sources */,
 				6D4BD86427505287004F454A /* Frameworks */,
 				6D4BD86527505287004F454A /* Resources */,
 				6D4BD8D0275124C0004F454A /* Embed Frameworks */,
+				49ED6D7139DD7B45C170CC8A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,6 +233,7 @@
 			name = chpanPW6;
 			packageProductDependencies = (
 				6D4BD8D227512673004F454A /* SystemPackage */,
+				6D4BD906275138C2004F454A /* MyLogger2 */,
 			);
 			productName = chpanPW6;
 			productReference = 6D4BD86727505287004F454A /* chpanPW6.app */;
@@ -276,7 +308,7 @@
 			);
 			mainGroup = 6D4BD85E27505287004F454A;
 			packageReferences = (
-				6D4BD8D127512673004F454A /* XCRemoteSwiftPackageReference "swift-system" */,
+				6D4BD8D127512673004F454A /* XCRemoteSwiftPackageReference "swift-system.git" */,
 			);
 			productRefGroup = 6D4BD86827505287004F454A /* Products */;
 			projectDirPath = "";
@@ -338,6 +370,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49ED6D7139DD7B45C170CC8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chpanPW6/Pods-chpanPW6-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chpanPW6/Pods-chpanPW6-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chpanPW6/Pods-chpanPW6-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		646C037BD8A61CA0B86CAA31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chpanPW6-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D4BD86327505287004F454A /* Sources */ = {
@@ -520,6 +594,7 @@
 		};
 		6D4BD89227505288004F454A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 361591EE295098E693E3AE8E /* Pods-chpanPW6.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -548,6 +623,7 @@
 		};
 		6D4BD89327505288004F454A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AC01D4ACF87B71221B62F07 /* Pods-chpanPW6.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -712,7 +788,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6D4BD8D127512673004F454A /* XCRemoteSwiftPackageReference "swift-system" */ = {
+		6D4BD8D127512673004F454A /* XCRemoteSwiftPackageReference "swift-system.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-system.git";
 			requirement = {
@@ -725,8 +801,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		6D4BD8D227512673004F454A /* SystemPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6D4BD8D127512673004F454A /* XCRemoteSwiftPackageReference "swift-system" */;
+			package = 6D4BD8D127512673004F454A /* XCRemoteSwiftPackageReference "swift-system.git" */;
 			productName = SystemPackage;
+		};
+		6D4BD906275138C2004F454A /* MyLogger2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLogger2;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

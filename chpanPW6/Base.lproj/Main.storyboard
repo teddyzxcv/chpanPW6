@@ -30,12 +30,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log (swift package)"/>
+                                <connections>
+                                    <action selector="logFromSwiftPackage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I7i-NL-0XN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqf-XW-URZ">
                                 <rect key="frame" x="125" y="362" width="165" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log (pod)"/>
+                                <connections>
+                                    <action selector="logFromPod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m7B-h6-rBm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJc-Wf-AM8">
                                 <rect key="frame" x="109" y="433" width="196" height="31"/>
