@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MyLogger1
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func logFromFramework(_ sender: Any) { MyLogger1.log("hello, world")
+    }
+    
+//    @IBAction func logFromSwiftPackage(_ sender: Any) { MyLogger2.log("hello, world")
+//    }
+//    @IBAction func logFromPod(_ sender: Any) { MyLogger3.log("hello, world")
+//    }
 
 }
 

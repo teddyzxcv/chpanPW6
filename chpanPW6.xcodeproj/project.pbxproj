@@ -17,6 +17,8 @@
 		6D4BD88C27505288004F454A /* chpanPW6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4BD88B27505288004F454A /* chpanPW6UITests.swift */; };
 		6D4BD88E27505288004F454A /* chpanPW6UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4BD88D27505288004F454A /* chpanPW6UITestsLaunchTests.swift */; };
 		6D4BD89C2750F6AA004F454A /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4BD89B2750F6AA004F454A /* ARKit.framework */; };
+		6D4BD8CE275124C0004F454A /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4BD8CB275124B1004F454A /* MyLogger1.framework */; };
+		6D4BD8CF275124C0004F454A /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4BD8CB275124B1004F454A /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +36,35 @@
 			remoteGlobalIDString = 6D4BD86627505287004F454A;
 			remoteInfo = chpanPW6;
 		};
+		6D4BD8CA275124B1004F454A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D4BD8C5275124B1004F454A /* MyLogger1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D4BD8A727512407004F454A;
+			remoteInfo = MyLogger1;
+		};
+		6D4BD8CC275124B1004F454A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D4BD8C5275124B1004F454A /* MyLogger1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D4BD8B127512407004F454A;
+			remoteInfo = MyLogger1Tests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D4BD8D0275124C0004F454A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6D4BD8CF275124C0004F454A /* MyLogger1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6D4BD86727505287004F454A /* chpanPW6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chpanPW6.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +81,7 @@
 		6D4BD88B27505288004F454A /* chpanPW6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chpanPW6UITests.swift; sourceTree = "<group>"; };
 		6D4BD88D27505288004F454A /* chpanPW6UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chpanPW6UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6D4BD89B2750F6AA004F454A /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		6D4BD8C5275124B1004F454A /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4BD8CE275124C0004F454A /* MyLogger1.framework in Frameworks */,
 				6D4BD89C2750F6AA004F454A /* ARKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +114,7 @@
 		6D4BD85E27505287004F454A = {
 			isa = PBXGroup;
 			children = (
+				6D4BD8C5275124B1004F454A /* MyLogger1.xcodeproj */,
 				6D4BD86927505287004F454A /* chpanPW6 */,
 				6D4BD88027505288004F454A /* chpanPW6Tests */,
 				6D4BD88A27505288004F454A /* chpanPW6UITests */,
@@ -139,6 +172,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6D4BD8C6275124B1004F454A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D4BD8CB275124B1004F454A /* MyLogger1.framework */,
+				6D4BD8CD275124B1004F454A /* MyLogger1Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +191,7 @@
 				6D4BD86327505287004F454A /* Sources */,
 				6D4BD86427505287004F454A /* Frameworks */,
 				6D4BD86527505287004F454A /* Resources */,
+				6D4BD8D0275124C0004F454A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,6 +272,12 @@
 			mainGroup = 6D4BD85E27505287004F454A;
 			productRefGroup = 6D4BD86827505287004F454A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6D4BD8C6275124B1004F454A /* Products */;
+					ProjectRef = 6D4BD8C5275124B1004F454A /* MyLogger1.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6D4BD86627505287004F454A /* chpanPW6 */,
@@ -237,6 +286,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6D4BD8CB275124B1004F454A /* MyLogger1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyLogger1.framework;
+			remoteRef = 6D4BD8CA275124B1004F454A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D4BD8CD275124B1004F454A /* MyLogger1Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MyLogger1Tests.xctest;
+			remoteRef = 6D4BD8CC275124B1004F454A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6D4BD86527505287004F454A /* Resources */ = {
